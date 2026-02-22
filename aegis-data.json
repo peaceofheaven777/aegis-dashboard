@@ -4,7 +4,7 @@
     "eth": "0.00",
     "botcoin": "2.29M"
   },
-  "status": "BLOCKER DETECTED: NO GAS",
+  "status": "TRADING UNLOCKED - SNIPER ACTIVE",
   "lastBet": {
     "market": "BTC 1:30PM-1:45PM ET",
     "result": "FUNDING & SIGNING",
@@ -16,8 +16,8 @@
     "hurdle": "DELETED"
   },
   "aiSignal": {
-    "strategist": "Manual bet failed. Blocker: 0.00 POL balance on account. Real execution on Polymarket requires POL for gas fee.",
-    "dataWorker": "Test on Simmer ($SIM) was successful. Wallet is linked, but need amunisi POL to sign real approvals."
+    "strategist": "Approvals successfully set. POL gas detected ($14.00). Sniper is now scanning for real trade opportunities.",
+    "dataWorker": "Wallet 0xf13c... fully authorized. Ready to deploy $77.33 capital on 1m/5m signals."
   },
-  "lastUpdate": "Sunday, Feb 22, 18:46 GMT"
+  "lastUpdate": "Sunday, Feb 22, 18:52 GMT"
 }
