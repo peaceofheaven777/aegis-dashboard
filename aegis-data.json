@@ -1,0 +1,23 @@
+{
+  "wallet": {
+    "usdc": "26.22",
+    "eth": "0.001",
+    "botcoin": "2.29M"
+  },
+  "status": "LIVE CONNECTION",
+  "lastBet": {
+    "market": "BTC 12:45 GMT",
+    "result": "Loss",
+    "pnl": "-$1.74"
+  },
+  "mining": {
+    "credits": 2,
+    "epoch": 2,
+    "hurdle": "25M"
+  },
+  "aiSignal": {
+    "strategist": "Wait for 25M BOTCOIN hurdle. Market structure neutral. BTC RSI at 52 shows indecision.",
+    "dataWorker": "Calculation complete. Accuracy for last epoch: 100%. Ready for next challenge."
+  },
+  "lastUpdate": "Sunday, Feb 22, 15:40 GMT"
+}

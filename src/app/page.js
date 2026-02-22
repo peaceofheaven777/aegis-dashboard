@@ -3,14 +3,33 @@ import React, { useState, useEffect } from 'react';
 
 export default function Dashboard() {
   const [data, setData] = useState({
-    wallet: { usdc: "26.22", eth: "0.001", botcoin: "2.29M" },
-    status: "STANDBY",
-    lastBet: { market: "BTC Up/Down", result: "Loss", pnl: "-$1.74" },
-    mining: { credits: 2, epoch: 2, hurdle: "25M" }
+    wallet: { usdc: "...", eth: "...", botcoin: "..." },
+    status: "SYNCING...",
+    lastBet: { market: "...", result: "...", pnl: "..." },
+    mining: { credits: 0, epoch: 0, hurdle: "..." },
+    lastUpdate: "Never"
   });
 
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        // Fetch from the raw GitHub JSON file
+        const res = await fetch('https://raw.githubusercontent.com/peaceofheaven777/aegis-dashboard/main/aegis-data.json');
+        if (res.ok) {
+          const json = await res.json();
+          setData(json);
+        }
+      } catch (e) {
+        console.error("Fetch failed", e);
+      }
+    }
+    fetchData();
+    const interval = setInterval(fetchData, 60000); // Auto refresh every 1 min
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="min-h-screen p-8 max-w-6xl mx-auto">
+    <div className="min-h-screen p-8 max-w-6xl mx-auto bg-[#020617] text-slate-100">
       <header className="flex justify-between items-center mb-12 border-b border-slate-800 pb-6">
         <div>
           <h1 className="text-3xl font-bold text-blue-400">🛡️ Aegis Dashboard</h1>
@@ -18,7 +37,7 @@ export default function Dashboard() {
         </div>
         <div className="flex items-center gap-2">
           <span className="h-3 w-3 bg-green-500 rounded-full animate-pulse"></span>
-          <span className="font-mono text-sm tracking-widest text-green-500">LIVE CONNECTION</span>
+          <span className="font-mono text-sm tracking-widest text-green-500 uppercase">{data.status}</span>
         </div>
       </header>
 
@@ -51,7 +70,7 @@ export default function Dashboard() {
               <span className="font-bold text-white">Epoch {data.mining.epoch}</span>
             </div>
             <div className="w-full bg-slate-800 h-2 rounded-full mt-4">
-              <div className="bg-blue-500 h-full rounded-full" style={{width: '9%'}}></div>
+              <div className="bg-blue-500 h-full rounded-full transition-all duration-1000" style={{width: '9%'}}></div>
             </div>
             <p className="text-[10px] text-slate-500 text-center uppercase tracking-tighter italic">Hurdle: {data.mining.hurdle} required</p>
           </div>
@@ -63,11 +82,11 @@ export default function Dashboard() {
           <div className="space-y-3">
             <div className="flex justify-between items-center">
               <span className="text-sm">Total PnL</span>
-              <span className="text-red-400 font-bold font-mono">{data.lastBet.pnl}</span>
+              <span className={`${data.lastBet.pnl.startsWith('-') ? 'text-red-400' : 'text-green-400'} font-bold font-mono`}>{data.lastBet.pnl}</span>
             </div>
             <div className="pt-4 border-t border-slate-800">
               <p className="text-[10px] text-slate-500 uppercase font-bold mb-1">Recent Activity</p>
-              <p className="text-sm italic text-slate-300">"{data.lastBet.market} 12:45 GMT - Resulted in {data.lastBet.result}"</p>
+              <p className="text-sm italic text-slate-300">"{data.lastBet.market} - Resulted in {data.lastBet.result}"</p>
             </div>
           </div>
         </div>
@@ -77,17 +96,17 @@ export default function Dashboard() {
           <h2 className="text-slate-500 text-sm font-semibold uppercase tracking-wider mb-4">🔎 Aegis Signal (TA Learning)</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-2">
-              <p className="text-sm text-blue-300"><b>Aegis Strategist (Claude Opus):</b> "Wait for 25M BOTCOIN hurdle. Market structure neutral. BTC RSI at 52 shows indecision."</p>
+              <p className="text-sm text-blue-300"><b>Aegis Strategist:</b> "{data.aiSignal?.strategist || 'Analyzing market patterns...'}"</p>
             </div>
             <div className="space-y-2">
-               <p className="text-sm text-green-300"><b>Aegis Data (GPT Codex):</b> "Calculation complete. Accuracy for last epoch: 100%. Ready for next challenge."</p>
+               <p className="text-sm text-green-300"><b>Aegis Data:</b> "{data.aiSignal?.dataWorker || 'Processing indicator math...'}"</p>
             </div>
           </div>
         </div>
       </main>
       
-      <footer className="mt-12 text-center text-slate-600 text-xs tracking-widest uppercase">
-        System Status: {data.status} • Powered by OpenClaw + Spark Intelligence
+      <footer className="mt-12 text-center text-slate-600 text-[10px] tracking-widest uppercase">
+        Last Sync: {data.lastUpdate} • System Powered by OpenClaw + Spark Intelligence
       </footer>
     </div>
   );
