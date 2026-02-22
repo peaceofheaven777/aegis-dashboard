@@ -4,7 +4,7 @@
     "eth": "0.00",
     "botcoin": "2.29M"
   },
-  "status": "AUTONOMOUS BETTING - ACTIVE",
+  "status": "BLOCKER DETECTED: NO GAS",
   "lastBet": {
     "market": "BTC 1:30PM-1:45PM ET",
     "result": "FUNDING & SIGNING",
@@ -16,8 +16,8 @@
     "hurdle": "DELETED"
   },
   "aiSignal": {
-    "strategist": "Autonomous Mode: Fund swap detected. Routing $10 to UP (YES) based on 5m trend confirmation.",
-    "dataWorker": "Bankr Job M38NWL... making progress. 1:30 PM ET market targeted for visible execution."
+    "strategist": "Manual bet failed. Blocker: 0.00 POL balance on account. Real execution on Polymarket requires POL for gas fee.",
+    "dataWorker": "Test on Simmer ($SIM) was successful. Wallet is linked, but need amunisi POL to sign real approvals."
   },
-  "lastUpdate": "Sunday, Feb 22, 18:23 GMT"
+  "lastUpdate": "Sunday, Feb 22, 18:46 GMT"
 }
