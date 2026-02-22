@@ -1,14 +1,14 @@
 {
   "wallet": {
-    "usdc": "77.33",
+    "usdc": "72.33",
     "eth": "0.00",
     "botcoin": "2.29M"
   },
-  "status": "AMUNISI MASUK - ANALYZING",
+  "status": "LIVE TRADE - UP",
   "lastBet": {
-    "market": "Waiting for Signal",
-    "result": "N/A",
-    "pnl": "$0.00"
+    "market": "BTC 12:00PM-12:05PM ET",
+    "result": "LIVE",
+    "pnl": "Executing..."
   },
   "mining": {
     "credits": 2,
@@ -16,8 +16,8 @@
     "hurdle": "25M"
   },
   "aiSignal": {
-    "strategist": "Funds detected ($77.33). Initiating high-precision ensemble TA (Claude + Codex).",
-    "dataWorker": "Scanning BTC/USDT 1m/5m/15m charts. Identifying optimal entry point."
+    "strategist": "Ensemble Signal: 5m Bullish Divergence detected at $67,353. Bias: STRONG UP.",
+    "dataWorker": "SDK Order matched. 10 shares purchased at 0.505 average price."
   },
-  "lastUpdate": "Sunday, Feb 22, 16:42 GMT"
+  "lastUpdate": "Sunday, Feb 22, 16:54 GMT"
 }
