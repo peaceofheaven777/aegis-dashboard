@@ -4,7 +4,7 @@
     "eth": "0.00",
     "botcoin": "2.29M"
   },
-  "status": "TRADING UNLOCKED - SNIPER ACTIVE",
+  "status": "BALANCE ERROR - 0.00 DETECTED",
   "lastBet": {
     "market": "BTC 1:30PM-1:45PM ET",
     "result": "FUNDING & SIGNING",
@@ -17,7 +17,7 @@
   },
   "aiSignal": {
     "strategist": "Approvals successfully set. POL gas detected ($14.00). Sniper is now scanning for real trade opportunities.",
-    "dataWorker": "Wallet 0xf13c... fully authorized. Ready to deploy $77.33 capital on 1m/5m signals."
+    "dataWorker": "System check: Signer wallet 0xf13c and Proxy 0x707C both return 0 USDC on-chain. Please verify funds are on Polygon network."
   },
-  "lastUpdate": "Sunday, Feb 22, 18:52 GMT"
+  "lastUpdate": "Sunday, Feb 22, 19:37 GMT"
 }
