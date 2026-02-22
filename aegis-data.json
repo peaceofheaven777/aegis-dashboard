@@ -4,20 +4,20 @@
     "eth": "0.00",
     "botcoin": "2.29M"
   },
-  "status": "KIMI 2.5 INTEGRATED",
+  "status": "POLYMARKET FOCUS",
   "lastBet": {
     "market": "BTC 12:15PM-12:20PM ET (UP)",
     "result": "LOSS",
     "pnl": "-$5.00"
   },
   "mining": {
-    "credits": 2,
-    "epoch": 2,
-    "hurdle": "25M"
+    "credits": "DISABLED",
+    "epoch": "N/A",
+    "hurdle": "DELETED"
   },
   "aiSignal": {
-    "strategist": "Loss analysis: Predicted bounce failed. Market rejected at EMA 20. Kimi 2.5 now active to help refine reversals.",
-    "dataWorker": "BTC dropped to 67,545. No divergence support found on lower timeframe. Recalibrating."
+    "strategist": "System pivoted. Botcoin mining purged. Focusing all compute on Polymarket TA.",
+    "dataWorker": "Bankr API disconnected. Local SDK active for direct execution."
   },
-  "lastUpdate": "Sunday, Feb 22, 17:20 GMT"
+  "lastUpdate": "Sunday, Feb 22, 17:24 GMT"
 }
