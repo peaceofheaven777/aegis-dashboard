@@ -6,9 +6,9 @@
   },
   "status": "LIVE TRADE - UP",
   "lastBet": {
-    "market": "BTC 12:00PM-12:05PM ET",
+    "market": "BTC 12:15PM-12:20PM ET",
     "result": "LIVE",
-    "pnl": "Executing..."
+    "pnl": "Syncing..."
   },
   "mining": {
     "credits": 2,
@@ -16,8 +16,8 @@
     "hurdle": "25M"
   },
   "aiSignal": {
-    "strategist": "Ensemble Signal: 5m Bullish Divergence detected at $67,353. Bias: STRONG UP.",
-    "dataWorker": "SDK Order matched. 10 shares purchased at 0.505 average price."
+    "strategist": "Broad market recovery signal. RSI 1m consolidating at 41. Prediction: UP-swing continuation.",
+    "dataWorker": "Order executed via CLOB SDK. 10 shares YES matched. Target resolution: 17:20 GMT."
   },
-  "lastUpdate": "Sunday, Feb 22, 16:54 GMT"
+  "lastUpdate": "Sunday, Feb 22, 17:12 GMT"
 }
