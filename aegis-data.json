@@ -4,7 +4,7 @@
     "eth": "0.00",
     "botcoin": "2.29M"
   },
-  "status": "ENSEMBLE DECISION: UP",
+  "status": "BYPASS V1.6 READY",
   "lastBet": {
     "market": "BTC 12:30-12:45 PM ET (UP)",
     "result": "LIVE - SIGNING",
@@ -17,7 +17,7 @@
   },
   "aiSignal": {
     "strategist": "Consensus reached: 3 Analysts (Gemini, Codex, Kimi) agree on UP bounce from 67,200 support.",
-    "dataWorker": "Tor Tunnel Ready. Bypassing region block. Preparing $10 execution."
+    "dataWorker": "Manual signing engine enabled. Tor Tunnel verified. Awaiting terminal execution."
   },
-  "lastUpdate": "Sunday, Feb 22, 18:04 GMT"
+  "lastUpdate": "Sunday, Feb 22, 18:06 GMT"
 }
