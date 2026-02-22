@@ -1,14 +1,14 @@
 {
   "wallet": {
-    "usdc": "72.33",
+    "usdc": "26.02",
     "eth": "0.00",
     "botcoin": "2.29M"
   },
-  "status": "LIVE TRADE - UP",
+  "status": "KIMI 2.5 INTEGRATED",
   "lastBet": {
-    "market": "BTC 12:15PM-12:20PM ET",
-    "result": "LIVE",
-    "pnl": "Syncing..."
+    "market": "BTC 12:15PM-12:20PM ET (UP)",
+    "result": "LOSS",
+    "pnl": "-$5.00"
   },
   "mining": {
     "credits": 2,
@@ -16,8 +16,8 @@
     "hurdle": "25M"
   },
   "aiSignal": {
-    "strategist": "Broad market recovery signal. RSI 1m consolidating at 41. Prediction: UP-swing continuation.",
-    "dataWorker": "Order executed via CLOB SDK. 10 shares YES matched. Target resolution: 17:20 GMT."
+    "strategist": "Loss analysis: Predicted bounce failed. Market rejected at EMA 20. Kimi 2.5 now active to help refine reversals.",
+    "dataWorker": "BTC dropped to 67,545. No divergence support found on lower timeframe. Recalibrating."
   },
-  "lastUpdate": "Sunday, Feb 22, 17:12 GMT"
+  "lastUpdate": "Sunday, Feb 22, 17:20 GMT"
 }
